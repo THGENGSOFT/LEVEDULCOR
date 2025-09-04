@@ -220,3 +220,32 @@ footer {
         height: 80px;
     }
 }
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: var(--marrom-claro);
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--dourado-suave);
+}
