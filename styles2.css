@@ -35,6 +35,20 @@ header {
     right: 50px;
 }
 
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .logo {
+        position: static;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .logo img {
+        height: 80px; /* reduz a logo para caber melhor */
+    }
+}
+
 header .logo img {
     height: 120px;
     width: auto;
