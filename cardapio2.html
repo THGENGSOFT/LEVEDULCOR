@@ -4,221 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio • Leve Dulçor</title>
-    <link rel="icon" href="logoleve.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f9f6f2;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #849E65 0%, #A6956D 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .logo   {
-            position: absolute;
-            top: 20px;
-            right: 50px;
-        }
-
-
-
-        header .logo img {
-        height: 120px;
-        width: auto;
-        border-radius: 10px;
-        background: #fff;
-        padding: 4px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        
-        }       
-
-        .back-link {
-            position: absolute;
-            left: 20px;
-            top: 20px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .menu-categories {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 20px;
-            background: #f5f0e6;
-        }
-        
-        .category-btn {
-            padding: 10px 20px;
-            background: white;
-            border: 2px solid #849E65;
-            border-radius: 30px;
-            cursor: pointer;
-            font-weight: bold;
-            color: #849E65;
-            transition: all 0.3s ease;
-        }
-        
-        .category-btn:hover, .category-btn.active {
-            background: #849E65;
-            color: white;
-        }
-        
-        .menu-content {
-            padding: 30px;
-        }
-        
-        .category-title {
-            color: #849E65;
-            margin: 30px 0 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #EAA8B4;
-        }
-        
-        .category-title:first-child {
-            margin-top: 0;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        .item {
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid #EAA8B4;
-        }
-        
-        .item-content {
-            padding: 15px;
-        }
-        
-        .item h4 {
-            font-size: 1.2rem;
-            color: #849E65;
-            margin-bottom: 8px;
-        }
-        
-        .item p {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 12px;
-        }
-        
-        .item-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
-        }
-        
-        .tag {
-            background: #f0e8d8;
-            color: #A6956D;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-        
-        .tag.lc {
-            background: #e8f4e8;
-            color: #4a7c59;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .menu-categories {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .category-btn {
-                width: 80%;
-                text-align: center;
-            }
-            
-            .back-link {
-                position: static;
-                margin-bottom: 15px;
-                display: block;
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="icon" href="imagens/logoleve.png">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <div class="container">
@@ -226,12 +13,9 @@
             <a href="index.html" class="back-link">← Voltar para a página principal</a>
             <h1>Cardápio Leve Dulçor</h1>
             <p class="subtitle">Confeitaria Saudável em Curitiba</p>
-    <div class="logo">
-            <img src="logoleve.png" alt="Logo Leve Dulçor">
-    </div>    
-
-
-
+            <div class="logo">
+                <img src="imagens/logoleve.png" alt="Logo Leve Dulçor">
+            </div>
         </header>
         
         <div class="menu-categories">
@@ -246,7 +30,7 @@
             <h2 class="category-title">Doces Tradicionais</h2>
             <div class="grid">
                 <div class="item" data-category="doces">
-                    <img src="brownie2.png" alt="Brownie">
+                    <img src="imagens/brownie.jpg" alt="Brownie">
                     <div class="item-content">
                         <h4>Brownie</h4>
                         <p>Delicioso brownie de chocolate.</p>
@@ -360,7 +144,7 @@
             <h2 class="category-title">Salgados Low Carb</h2>
             <div class="grid">
                 <div class="item" data-category="lowcarb salgados">
-                    <img src="coxinha.jpg" alt="LC Coxinha de Frango (2 unidades)">
+                    <img src="imagens/lc-coxinha-frango.jpg" alt="LC Coxinha de Frango (2 unidades)">
                     <div class="item-content">
                         <h4>LC Coxinha de Frango (2 unidades)</h4>
                         <p>Coxinha de frango low carb.</p>
@@ -371,7 +155,7 @@
                 </div>
                 
                 <div class="item" data-category="lowcarb salgados">
-                    <img src="coxinha.jpg" alt="LC Coxinha de Frango (6 unidades)">
+                    <img src="imagens/lc-coxinha-frango-6.jpg" alt="LC Coxinha de Frango (6 unidades)">
                     <div class="item-content">
                         <h4>LC Coxinha de Frango (6 unidades)</h4>
                         <p>Coxinha de frango low carb.</p>
@@ -443,7 +227,7 @@
                     <img src="imagens/mini-pizza-sortida.jpg" alt="Mini Pizza Sortida (6 unidades)">
                     <div class="item-content">
                         <h4>Mini Pizza Sortida (6un)</h4>
-                        <p>Mini pizzas avec sabores variados.</p>
+                        <p>Mini pizzas com sabores variados.</p>
                         <div class="item-tags">
                             <span class="tag">FUNCIONAL</span>
                         </div>
@@ -458,65 +242,6 @@
         </footer>
     </div>
 
-    <script>
-        // Adicionar evento de carregamento para inicializar a página
-        document.addEventListener('DOMContentLoaded', function() {
-            // Adicionar eventos de clique aos botões
-            const buttons = document.querySelectorAll('.category-btn');
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remover a classe active de todos os botões
-                    buttons.forEach(btn => {
-                        btn.classList.remove('active');
-                    });
-                    
-                    // Adicionar a classe active ao botão clicado
-                    this.classList.add('active');
-                    
-                    // Obter a categoria do data-category do botão
-                    const category = this.getAttribute('data-category');
-                    
-                    // Filtrar os itens
-                    const items = document.querySelectorAll('.item');
-                    items.forEach(item => {
-                        if (category === 'all') {
-                            item.style.display = 'block';
-                        } else if (item.getAttribute('data-category').includes(category)) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                    
-                    // Esconder os títulos das categorias vazias
-                    const categoryTitles = document.querySelectorAll('.category-title');
-                    categoryTitles.forEach(title => {
-                        const categoryGrid = title.nextElementSibling;
-                        const visibleItems = categoryGrid.querySelectorAll('.item[style="display: block"]');
-                        
-                        if (visibleItems.length === 0 && category !== 'all') {
-                            title.style.display = 'none';
-                        } else {
-                            title.style.display = 'block';
-                        }
-                    });
-                });
-            });
-            
-            // Adicionar efeitos de hover para os itens
-            const items = document.querySelectorAll('.item');
-            items.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = '0 3px 10px rgba(0,0,0,0.08)';
-                });
-            });
-        });
-    </script>
+    <script src="cardapio-script.js"></script>
 </body>
 </html>
